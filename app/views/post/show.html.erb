@@ -1,4 +1,12 @@
-<div class="main top-main">
-  <div class=post-content">
-  </div>
+<div class="post-content">
+    <div class="post-movie">
+        <video controls autoplay loop><source src="IMG_8611.MOV"></video>
+    </div>
+    <div class="post-side">
+        <h1 class="post-title"></h1>
+        <div class="post-article">
+            <%= @post.content %>
+        </div>
+        <%=link_to("編集する", "/post/#{@post.id}/edit") %>
+    </div>
 </div>

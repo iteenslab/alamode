@@ -1,8 +1,7 @@
-<div class="post-content">
-    <div class="post-movie">
-
+<div class="post-index">
+    <div class="post-content" %>
+        <% @post.each do |post| %>
+            <%= post.content %>
+        <% end %>
     </div>
-    <div class="post-article">
-    </div>
-    <
 </div>
