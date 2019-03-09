@@ -1,12 +1,29 @@
 <div class="post-content">
     <div class="post-movie">
-        <video controls autoplay loop><source src="IMG_8611.MOV"></video>
+        <video class="movie" controls autoplay loop><source src="IMG_8611.MOV"></video>
+        <p>ヘアスタイルの質問をしてみませんか？</p>
+        <textarea></textarea>
     </div>
     <div class="post-side">
-        <h1 class="post-title"></h1>
+        <div class="user-info">
+            <ul>
+                <li><img src=""></li>
+                <li><%= "ユーザー名" %></li>
+                <li><%= "繋がった人：〇人" %></li>
+            </ul>
+        </div>
+        <h1 class="post-title">隠キャが髪を染めてみた</h1>
+        <div class="usedItems">
+            <p>使用アイテム</p>
+            <div class="usedItem">
+                <img src="">
+                <p>アイテム名</p>
+            </div>
+        </div>
         <div class="post-article">
             <%= @post.content %>
         </div>
-        <%=link_to("編集する", "/post/#{@post.id}/edit") %>
+        <%=link_to("編集する", "/post/#{@post.id}/edit", {class:"button edit"}) %>
+        <%=link_to("削除", "/post/#{@post.id}/destoroy", {method: "post", class:"button destroy"}) %>
     </div>
 </div>

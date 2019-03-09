@@ -1,25 +1,79 @@
-  .post-content{
-      background-color:white;
-      height:100%;
-      padding-top: 100px;
-  }
-
   .post-movie{
       float:left;
+      padding:30px;
+      margin:100px 30px 30px 200px;
+  }
+
+  .post-movie p{
+      margin-top:100px;
+  }
+
+  .movie{
+      width:270px;
+      height:480px;
+      border-radius:10px;
+      box-shadow: 20px 20px 25px -10px gray;
   }
 
   .post-side{
     float:left;
+    margin-top:150px;
+    margin-left: 50px;
+    width: 40%;
   }
 
-  .post-new{
-    background-color:white;
-    height:100%;
-    padding-top: 100px;
+  .user-info li{
+    display: inline-block;
+    margin: 0px 10px;
   }
 
-  input{
+  .user-info{
+      font-size: 15px;
+  }
+
+  .post-article{
+      border-radius: 1px solid white;
+      border-radius: 10px;
+      box-shadow: 3px 3px 5px 2px gray;
+      padding: 10%;
+      margin: 5% 5%;
+      height: 50%;
+  }
+
+  .post-side h1{
+      margin: 3% 5%;
+  }
+
+  .button{
+      border-radius: 5px;
+      text-align: center;
+      padding: 10px 20px;
+      background-color:gray;
+      display: block;
+      text-align: center;
+      width: 100px;
+      margin: 10px;
+      float: left;
+  }
+
+  .edit{
+      margin-left:150px;
+  }
+
+  .button:hover{
       background-color:orange;
+      transition: 0.5s;
   }
+
+  textarea{
+      border-radius: 10px;
+      resize: none;
+      width: 90%;
+      height: 100px;
+      margin-top: 20px;
+  }
+
+
+
 
   
