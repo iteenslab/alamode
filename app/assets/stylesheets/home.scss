@@ -4,6 +4,7 @@
 /* reset ================================ */
 * {
   box-sizing: border-box;
+  margin: 0;
 }
 
 html {
@@ -14,40 +15,25 @@ html {
   position: relative;
 }
 
-ul, li {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
 a {
   text-decoration: none;
   color: #2d3133;
   font-size: 14px;
 }
 
-h1, h2, h3, h4, h5, h6, p {
-  margin: 0;
-}
-
-input {
-  background-color: transparent;
-  outline-width: 0;
-}
-
-form input[type="submit"] {
-  border: none;
-  cursor: pointer;
-}
-
 /* 共通レイアウト ================================ */
 body {
   color: #2d3133;
+<<<<<<< HEAD
   background-color: white;
+=======
+  background-color: #fffafa;
+>>>>>>> 5305476cd261e18fa7ae86fe5d9dd4c1b6ac70f1
   margin: 0;
-  min-height: 1vh;
-  width: 100%;
-  height: 100%;
+
+    display: flex;
+    flex-flow: column;
+    min-height: 100vh;
 }
 
 .main {
@@ -59,19 +45,17 @@ body {
   background-color: #f5f8fa;
 }
 
-.container {
-  max-width: 600px;
-  margin: 60px auto;
-  padding-left: 15px;
-  padding-right: 15px;
-  clear: both;
+main {
+  flex: 1;
+  overflow: hidden;
 }
+
 
 /* ヘッダー ================================ */
 header {
   height: 64px;
-  position: absolute;
-  z-index: 1;
+  position: relative;
+//  z-index: 1;
   width: 100%;
   background-color: #f89351;
 }
@@ -100,6 +84,7 @@ header {
   font-size: 13px;
   color: white;
   padding-left: 15px;
+  list-style: none;
 }
 
 .header-menus a {
@@ -109,17 +94,14 @@ header {
   padding-right: 15px;
 }
 
-
 /* フッター ================================ */
 footer {
-  bottom: 0;
+//  bottom: 0;
   height: 64px;
-  position: fixed;
-  width: 100%;
+  flex: 1;
   text-align: center;
   border-style: solid none none none;
   border-width: thin;
-  padding: 15px 0px 0px 0px;
 }
 /* top ================================ */
 .top-main {
@@ -154,3 +136,130 @@ footer {
   font-size: 24px;
 }
 
+//--------------------Login //
+.login-wrap {
+  width: 100%;
+  height: auto;
+  padding: 15% 0%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.login-wrap h1 {
+  line-height: 100px;
+  text-align: center;
+}
+.login-left-wrap {
+  display: inline-block;
+  vertical-align: top;
+  height: auto;
+  width: 49%;
+  padding: 5% 5% 5% 15%;
+}
+.login-right-wrap {
+  display: inline-block;
+  vertical-align: top;
+  height: auto;
+  width: 49%;
+  padding-right: 15%;
+  text-align: center;
+}
+@media (max-width: 1000px){
+  .login-left-wrap {
+    width: 100%;
+    padding: 5%;
+  }
+  .login-right-wrap {
+    width: 100%;
+    padding: 5%;
+  }
+}
+.login-form {
+  background-color: #FFFFFF;
+  position: relative;
+  width: 400px;
+  height: 450px;
+  margin: 0;
+  border-radius: 1.5em;
+  box-shadow: 0px 11px 35px 2px rgba(0, 0, 0, 0.14);
+  display: inline-block;
+}
+
+.sign {
+  padding-top: 40px;
+  color: #8C55AA;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: bold;
+  font-size: 23px;
+}
+.un {
+  width: 76%;
+  color: rgb(38, 50, 56);
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 1px;
+  background: rgba(136, 126, 126, 0.04);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  outline: none;
+  box-sizing: border-box;
+  border: 2px solid rgba(0, 0, 0, 0.02);
+  margin-bottom: 50px;
+  //  margin-left: 46px;
+  text-align: center;
+  margin-bottom: 27px;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+form.form-signup {
+  padding-top: 40px;
+}
+
+.pass {
+  width: 76%;
+  color: rgb(38, 50, 56);
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 1px;
+  background: rgba(136, 126, 126, 0.04);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  outline: none;
+  box-sizing: border-box;
+  border: 2px solid rgba(0, 0, 0, 0.02);
+  margin-bottom: 50px;
+  //  margin-left: 46px;
+  text-align: center;
+  margin-bottom: 27px;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+
+.un:focus, .pass:focus {
+  border: 2px solid rgba(0, 0, 0, 0.18) !important;
+
+}
+
+.submit {
+  cursor: pointer;
+  border-radius: 5em;
+  color: #fff;
+  background: linear-gradient(to right, #9C27B0, #E040FB);
+  border: 0;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  font-family: 'Ubuntu', sans-serif;
+  margin-left: 10%;
+  font-size: 12px;
+  box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.04);
+}
+
+.login-form a {
+  text-shadow: 0px 0px 3px rgba(117, 117, 117, 0.12);
+  color: #E1BEE7;
+  text-decoration: none
+}
