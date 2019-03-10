@@ -12,7 +12,6 @@ html {
   line-height: 1.7;
   letter-spacing: 1px;
   height: 100%;
-  position: relative;
 }
 
 a {
@@ -24,11 +23,7 @@ a {
 /* 共通レイアウト ================================ */
 body {
   color: #2d3133;
-<<<<<<< HEAD
-  background-color: white;
-=======
   background-color: #fffafa;
->>>>>>> 5305476cd261e18fa7ae86fe5d9dd4c1b6ac70f1
   margin: 0;
 
     display: flex;
@@ -52,7 +47,7 @@ main {
 /* ヘッダー ================================ */
 header {
   height: 64px;
-  position: relative;
+  position: absolute;
   width: 100%;
   background-color: #E1403B;
 }
