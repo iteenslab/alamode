@@ -128,25 +128,25 @@ footer {
 }
 
 //--------------------Login //
-.login-wrap {
+.signup-wrap {
   width: 100%;
   margin-top: 13%;
   text-align: center;
 //  overflow: hidden;
 }
 
-.login-wrap h1 {
+.signup-wrap h1 {
   line-height: 100px;
   text-align: center;
 }
-.login-left-wrap {
+.signup-left-wrap {
   display: inline-block;
   vertical-align: top;
   height: auto;
   width: 49%;
   padding: 5% 5% 5% 15%;
 }
-.login-right-wrap {
+.signup-right-wrap {
   display: inline-block;
   vertical-align: top;
   height: auto;
@@ -164,7 +164,7 @@ footer {
     padding: 5%;
   }
 }
-.login-form {
+.signup-form {
   background-color: #FFFFFF;
   position: relative;
   width: 400px;
@@ -248,7 +248,7 @@ form.form-signup {
   box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.04);
 }
 
-.login-form a {
+.signup-form a {
   text-shadow: 0px 0px 3px rgba(117, 117, 117, 0.12);
   color: #E1BEE7;
   text-decoration: none
