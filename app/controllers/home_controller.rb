@@ -1,6 +1,6 @@
 class HomeController < ApplicationController
   def top
   end
-  def login
+  def signup
   end
 end

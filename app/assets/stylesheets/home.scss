@@ -37,12 +37,10 @@ body {
 }
 
 .main {
-  position: absolute;
+  position: fixed;
   top: 64px;
   width: 100%;
-  height: auto;
-  min-height: 100%;
-  background-color: #f5f8fa;
+//  background-color: #f5f8fa;
 }
 
 main {
@@ -55,9 +53,8 @@ main {
 header {
   height: 64px;
   position: relative;
-//  z-index: 1;
   width: 100%;
-  background-color: #f89351;
+  background-color: #E1403B;
 }
 
 .header-logo {
@@ -98,33 +95,32 @@ header {
 footer {
 //  bottom: 0;
   height: 64px;
-  flex: 1;
   text-align: center;
   border-style: solid none none none;
   border-width: thin;
+  line-height: 64px;
 }
 /* top ================================ */
 .top-main {
-  padding: 200px 0 100px;
-  text-align: center;
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: auto;
-  min-height: 100%;
-  color: #696969;
-  background-color: #fffafa;
-  background-repeat: no-repeat;
-  background-position: center 50%;
-  background-size: cover;
-  background-image: url("/top.jpg");
 }
 
 .top-message {
   position: relative;
+
+    padding: 200px 0 100px;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    height: auto;
+    color: #696969;
+    background-color: #fffafa;
+    background-repeat: no-repeat;
+    background-position: center 50%;
+    background-size: cover;
+    background-image: url("/top.jpg");
 }
 
-.top-main h2 {
+.top-message h2 {
   font-size: 70px;
   font-weight: 500;
   line-height: 1.3;
@@ -132,31 +128,30 @@ footer {
   margin-bottom: 20px;
 }
 
-.top-main p {
+.top-message p {
   font-size: 24px;
 }
 
 //--------------------Login //
-.login-wrap {
+.signup-wrap {
   width: 100%;
-  height: auto;
-  padding: 15% 0%;
+  margin-top: 13%;
   text-align: center;
-  overflow: hidden;
+//  overflow: hidden;
 }
 
-.login-wrap h1 {
+.signup-wrap h1 {
   line-height: 100px;
   text-align: center;
 }
-.login-left-wrap {
+.signup-left-wrap {
   display: inline-block;
   vertical-align: top;
   height: auto;
   width: 49%;
   padding: 5% 5% 5% 15%;
 }
-.login-right-wrap {
+.signup-right-wrap {
   display: inline-block;
   vertical-align: top;
   height: auto;
@@ -165,16 +160,16 @@ footer {
   text-align: center;
 }
 @media (max-width: 1000px){
-  .login-left-wrap {
+  .signup-left-wrap {
     width: 100%;
     padding: 5%;
   }
-  .login-right-wrap {
+  .signup-right-wrap {
     width: 100%;
     padding: 5%;
   }
 }
-.login-form {
+.signup-form {
   background-color: #FFFFFF;
   position: relative;
   width: 400px;
@@ -258,7 +253,7 @@ form.form-signup {
   box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.04);
 }
 
-.login-form a {
+.signup-form a {
   text-shadow: 0px 0px 3px rgba(117, 117, 117, 0.12);
   color: #E1BEE7;
   text-decoration: none
