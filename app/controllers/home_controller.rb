@@ -3,4 +3,6 @@ class HomeController < ApplicationController
   end
   def signup
   end
+  def login
+  end
 end
