@@ -25,29 +25,20 @@ body {
   color: #2d3133;
   background-color: #fffafa;
   margin: 0;
-
-    display: flex;
-    flex-flow: column;
-    min-height: 100vh;
-}
-
-.main {
-  position: fixed;
-  top: 64px;
-  width: 100%;
-//  background-color: #f5f8fa;
+  display: flex;
+  flex-flow: column;
+  min-height: 100vh;
 }
 
 main {
+  width: 100%;
   flex: 1;
-  overflow: hidden;
 }
 
 
 /* ヘッダー ================================ */
 header {
   height: 64px;
-  position: absolute;
   width: 100%;
   background-color: #E1403B;
 }
@@ -88,7 +79,6 @@ header {
 
 /* フッター ================================ */
 footer {
-//  bottom: 0;
   height: 64px;
   text-align: center;
   border-style: solid none none none;
@@ -101,18 +91,17 @@ footer {
 
 .top-message {
   position: relative;
-
-    padding: 200px 0 100px;
-    text-align: center;
-    position: absolute;
-    width: 100%;
-    height: auto;
-    color: #696969;
-    background-color: #fffafa;
-    background-repeat: no-repeat;
-    background-position: center 50%;
-    background-size: cover;
-    background-image: url("/top.jpg");
+  padding: 200px 0 100px;
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  height: auto;
+  color: #696969;
+  background-color: #fffafa;
+  background-repeat: no-repeat;
+  background-position: center 50%;
+  background-size: cover;
+  background-image: url("/top.jpg");
 }
 
 .top-message h2 {
@@ -129,10 +118,11 @@ footer {
 
 //--------------------Login //
 .signup-wrap {
+  position: relative;
   width: 100%;
   margin-top: 13%;
   text-align: center;
-//  overflow: hidden;
+  //  overflow: hidden;
 }
 
 .signup-wrap h1 {
